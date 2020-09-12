@@ -17,7 +17,7 @@ namespace POO3D3309.DAL
         private string conInfo = "persist security info = false;" +
                                  "server = localhost;" +
                                  "database = bd_Gravadora;" +
-                                 "user = root;" + "pwd = Mar250970;";
+                                 "user = root;" + "pwd = ;";
 
         public void Conectar()
         {
