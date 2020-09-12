@@ -1,0 +1,209 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+html {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Titillium Web', sans-serif;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+header {
+    position: fixed;
+    background-color: #302D38;
+    padding:20px;
+    width: 100%;
+    height: 80px;
+}
+
+header .logo {
+    color: #fff;
+    margin: -10px;
+    padding-left: 45px;
+    font-size: 30px;
+}
+
+.sidebar {
+    background: #302D38;
+    padding-top: 30px;
+    margin-top: 80px;
+    position: fixed;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    transition: 0.5s;
+    transition-property: left;
+}
+
+    .sidebar #profile_img {
+        margin-left: 20%;
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+        display: block;
+        margin-bottom: 10px;
+        transition: 0.7s;
+        transition-property: opacity;
+    }
+
+    .sidebar h4 {
+        margin-left: 20%;
+        color: #fff;
+        margin-top: 0;
+        margin-bottom: 40px;
+        font-size: 25px;
+        transition: 0.7s;
+        transition-property: opacity;
+    }
+
+    .sidebar a {
+        color: #fff;
+        display: block;
+        width: 100%;
+        line-height: 60px;
+        text-decoration: none;
+        padding-left: 30px;
+        box-sizing: border-box;
+        font-size: 25px;
+        transition: .5s;
+    }
+
+    .sidebar a:hover {
+        background: #fff;
+        color: #6B85AA;
+    }
+
+    .sidebar a span {
+        transition: .7s;
+        transition-property: opacity;
+    }
+
+    .sidebar a i {
+        transition: .5s;
+        transition-property: margin-left;
+        padding-right: 10px;
+    }
+
+    .sidebar a i:hover {
+        transition: .7s;
+    }
+
+label #open-menu {
+    z-index: 1;
+    color: #fff;
+    position: fixed;
+    cursor: pointer;
+    left: 20px;
+    font-size: 25px;
+    margin: 5px 0;
+    margin-top: 10px;
+}
+
+#open-menu:hover {
+    transition: .5s;
+    color: #6B85AA;
+}
+
+#check:checked ~ .sidebar {
+    left: -15%;
+}
+
+#check:checked ~ .sidebar a span {
+    display: none;
+}
+
+#check:checked ~ .sidebar a span {
+    opacity: 0;
+}
+
+#check:checked ~ .sidebar a i {
+    font-size: 25px;
+    margin-left: 82%;
+    width: 80px;
+}
+
+#check:checked ~ .sidebar img {
+    opacity: 0;
+}
+
+#check:checked ~ .sidebar h4 {
+    opacity: 0;
+}
+
+#check {
+    display: none;
+}
+
+.background {
+    overflow: hidden;
+    width: 100vw;
+    margin-left: 15%;
+    height: 100vh;
+    background-image: url(../res/IMG/2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: .8s;
+}
+
+#check:checked ~ .background {
+    margin-left: 0%;
+}
+
+#check {
+    display: none;
+}
+
+
+/* weather.html */
+
+.info {
+    top: 100px;
+    width: 85%;
+    height: 85%;
+    background: rgba(48, 45, 56,0.8);
+    position: fixed;
+    left: 20%;
+    overflow: hidden;
+    overflow-y: scroll;
+    transition: .5s;
+}
+
+#check:checked ~ .background .info {
+    margin-left: 0%;
+    left: 10%;
+}
+
+.form-control{
+    margin-left: 2%;
+    margin-top: 5%;
+    width:75%;
+}
+
+.info .titulo {
+    margin-top: 2%;
+    margin-left: 5%;
+    height: 5%;
+    width: 90%;
+    color: #6B85AA;
+    font-size: 24px;
+}
+
+.info .btnConsulta {
+}
+.info #consultadiv{
+    margin-top:50%;
+    margin-left:5%;
+    margin-right:5%;
+    margin-bottom:5%;
+}
+
